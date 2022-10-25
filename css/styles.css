@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --border-radius: 10px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  position: relative;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 97vh;
+}
+.component {
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: var(--border-radius);
+  text-align: center;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  --webkit-transform: translate(-50%, -50%);
+  --moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.component img {
+  width: 90%;
+  border-radius: var(--border-radius);
+  margin-top: 15px;
+}
+.component .main {
+  font-size: 23px;
+  font-weight: 700;
+  margin: 20px auto 20px;
+  width: 270px;
+}
+.component .text {
+  color: hsl(212, 45%, 89%);
+  font-size: 15px;
+  width: 275px;
+  margin: 0 auto 25px;
+}
